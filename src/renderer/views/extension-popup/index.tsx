@@ -38,7 +38,7 @@ const show = () => {
 const createWebview = (url: string, inspect: boolean) => {
   webview = document.createElement('webview');
 
-  webview.setAttribute('partition', 'persist:view');
+  // webview.setAttribute('partition', 'persist:view');
   webview.setAttribute('src', url);
   webview.setAttribute(
     'preload',

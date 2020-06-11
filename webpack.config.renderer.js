@@ -16,6 +16,7 @@ const appConfig = getConfig(getBaseConfig('app'), {
   devServer: {
     contentBase: join(__dirname, 'build'),
     port: PORT,
+    host: '127.0.0.1',
     hot: true,
     inline: true,
     disableHostCheck: true,
@@ -31,6 +32,7 @@ const extPopupConfig = getConfig({
   devServer: {
     contentBase: join(__dirname, 'build'),
     port: PORT,
+    host: '127.0.0.1',
     hot: true,
     inline: true,
     disableHostCheck: true,

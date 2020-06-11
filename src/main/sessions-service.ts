@@ -14,7 +14,7 @@ import { requestPermission } from './dialogs/permissions';
 
 // TODO: move windows list to the corresponding sessions
 export class SessionsService {
-  public view = session.fromPartition('persist:view');
+  public view = session.defaultSession;
   public viewIncognito = session.fromPartition('view_incognito');
 
   public incognitoExtensionsLoaded = false;

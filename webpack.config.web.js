@@ -1,5 +1,9 @@
 /* eslint-disable */
-const { getConfig, applyEntries, getBaseConfig } = require('./webpack.config.base');
+const {
+  getConfig,
+  applyEntries,
+  getBaseConfig,
+} = require('./webpack.config.base');
 const { join } = require('path');
 /* eslint-enable */
 
@@ -11,6 +15,7 @@ const webConfig = getConfig(getBaseConfig('web'), {
   devServer: {
     contentBase: join(__dirname, 'build'),
     port: PORT,
+    host: '127.0.0.1',
     hot: true,
     inline: true,
     disableHostCheck: true,

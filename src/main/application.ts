@@ -72,6 +72,8 @@ export class Application {
 
       if (credentials) {
         callback(credentials.username, credentials.password);
+      } else {
+        callback();
       }
     });
 
